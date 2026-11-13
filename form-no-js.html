@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form no JS | Thomas Rocha</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+      <nav>
+        <ul>
+          <li class="cutout-button"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="form-no-js.html">Form no JS</a></li>
+          <li><a href="form-with-js.html">Form with JS</a></li>
+        </ul>
+      </nav>
+      </header>
+      <h1>Form</h1>
+      <section id="form-no-js" class="submission-form">
+        <h2>Form no JS</h2>
+        <form action="https://httpbin.org/post" method="POST">
+          <fieldset>
+            <legend>Your information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="100" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </fieldset>
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" minlength="10" maxlength="1000" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Thomas Rocha</p>
+      <ul>
+        <li><a href="mailto:thomaslrocha05@gmail.com">Email</a></li>
+        <li><a href="https://github.com/thomas-rocha">GitHub</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
